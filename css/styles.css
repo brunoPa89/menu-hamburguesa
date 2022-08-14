@@ -40,8 +40,7 @@ h3 {
 .menuNav {
     background-color: rgb(208, 168, 174);
     width: 100%;
-    /*MAXI, NO PUDE HACER EL MENU HAMBURGUESA PARA QUE QUEDE MEJOR
-    display: none; */
+    display: none; 
 }
 
 nav ul {
@@ -452,6 +451,10 @@ footer h2 {
 
     .tituloHeader {
         font-size: 60px;
+    }
+
+    .bg-menu{
+       background-color: rgb(212, 98, 98);
     }
 
     .menuNav {
