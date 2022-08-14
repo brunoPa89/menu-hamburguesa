@@ -1,0 +1,569 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color de fondo */
+body {
+    background-color: pink;
+}
+
+
+h2,
+h3 {
+    font-family: 'Source Serif Pro', serif;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* ESTILOS HEADER */
+
+
+.containerHeader {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.tituloHeader {
+    background-color: rgb(212, 164, 171);
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(48, 6, 48);
+    padding: 15px;
+    width: 100%;
+}
+
+.menuNav {
+    background-color: rgb(208, 168, 174);
+    width: 100%;
+    /*MAXI, NO PUDE HACER EL MENU HAMBURGUESA PARA QUE QUEDE MEJOR
+    display: none; */
+}
+
+nav ul {
+    background-color: rgb(212, 98, 98);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav ul li {
+    background-color: rgb(208, 168, 174);
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    box-shadow: 1px 1px black;
+    border-radius: 10px;
+}
+
+nav ul li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+
+
+/* ESTILOS DEl MAIN*/
+
+
+.contenedorMain {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.contenidoMain {
+    display: flex;
+    flex-direction: column;
+   
+    
+
+}
+
+.contenidoMain h2 {
+    justify-content: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+
+}
+
+.textoMain p {
+    margin: 25px 0 20 0;
+    font-size: 22px;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.contenidoMain div h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
+
+.imagenDos {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem 2rem 0rem;
+
+}
+
+
+
+
+/* PAGINA PILATES */
+.mainPilates{
+    font-size: 1.3rem;
+    border: solid 1px black;
+    margin: 3rem 0 2rem 0;
+}
+
+.contenedorPilates{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.imgPilates{ 
+    margin-bottom: 30px;
+    height: 450px;
+ }
+
+ .textoPilates{
+    text-align: center;
+ }
+
+ .pregunta h4{
+    font-size: 19px;
+    font-weight: bold;
+    margin: 25px 0 5px 0;
+    text-transform: uppercase;
+    background-color: rgba(164, 170, 219, 0.866);
+    padding: 10px;
+ }
+
+ .pregunta p{
+    font-size: 18px;
+
+    line-height: 1.2;
+ }
+
+
+.videoPilates iframe{
+    width: 100%;
+    height: 350px;
+}
+
+
+
+
+
+
+
+
+.videoUno {
+    /*margin: 100px 450px 50px 450px;*/
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* estilo h2 */
+main h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(48, 6, 48);
+}
+
+/* estilo imagen */
+main .imgPilates {
+    display: flex;
+    justify-content: center;
+    border-image-width: auto;
+
+}
+
+/* estilo parrafo */
+.parrafo {
+    display: inline-block;
+    text-align: center;
+}
+
+/* estilos de elongacion */
+.tituloElongacion {
+    font-size: 50px;
+    border: solid 1px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgElongacion{
+    width: 60%;
+    margin: 0 auto;
+    }
+
+
+.textoElongacion {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(48, 6, 48);
+}
+
+/*ESTILOS DE YOGA */
+
+.mainYoga{
+    width: 80%;
+    margin: 0 auto;
+}
+.tituloYoga {
+    font-size: 50px;
+    border: solid 1px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pYoga{
+    font-size: 20px;
+}
+
+.videoYoga .videoYoga1 {
+    width: 100%;
+    height: 350px;
+    margin-top: 25px;
+}
+
+/* horarios de yoga*/
+.horarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+}
+
+.horarios .horarioYoga {
+    width: 25rem;
+    font-family: 'Source Serif Pro', serif;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* ESTILOS DE CLASES  */
+img {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.clases {
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contenedorMain .mainClases h2 {
+    font-size: 1.3rem;
+    border: solid 1px black;
+    margin: 3rem 0 2rem 0;
+}
+
+.imgClases {
+    display: grid;
+    width: 70%;
+    align-content: center;
+    margin: 0 auto;
+    gap: 3.5rem;
+    border: 2px solid black;
+    
+
+    
+}
+
+.sectionClases{
+    margin: 1.3rem;
+}
+
+.sectionClases p {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(48, 6, 48);
+}
+
+/* ESTILOS DE CONTACTO */
+
+/* estilos de subtitulo*/
+
+.subtituloContacto {
+    font-size: 50px;
+    border: solid 1px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* estilos de formulario */
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    background-color: rgb(212, 98, 98);
+    padding: 2px;
+    border-style: double;
+    font-size: 20px;
+}
+
+input,
+textarea {
+    padding: 5px;
+}
+
+label {
+    display: block;
+    padding: 5px;
+}
+
+/* estilos de redes */
+
+.contacto {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* estilo footer */
+footer h2 {
+    background-color: rgb(212, 164, 171);
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+/*GRID*/
+/* grid index */
+.contenedorIndex {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorYoga {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contenedorGaleria {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr) 200px;
+    grid-template-rows: 1fr;
+}
+
+
+/*QUERY PARA TABLET*/
+@media screen and (min-width:576px) and (max-width:991px) {
+    /*INDEX*/
+    /* estilos header */
+
+    .tituloHeader {
+        font-size: 50px;
+    }
+
+    .menuNav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px;
+        padding: 10px;
+        box-shadow: 1px 1px black;
+        border-radius: 10px;
+    }
+
+    nav ul li a {
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+
+    }
+
+    /*estilos main*/
+    .textoMain p {
+        font-size: 24px;
+    }
+
+    .contenidoMain div h3 {
+        font-size: 25px;
+    }
+
+    /*CLASES */
+
+    /* estilo section*/
+    
+    .contenedorMain .mainClases h2{
+        font-size: 2.1rem;
+    }
+   
+    .sectionClases p {
+        font-size: 1.7rem;
+        margin-bottom: 5rem;
+    }
+
+
+}
+
+
+
+/*QUERY PARA COMPU*/
+
+@media screen and (min-width:992px) {
+
+    /* ESTILOS HEADER */
+    .header{
+        position: sticky;
+        top: 0;
+        }
+
+    .tituloHeader {
+        font-size: 60px;
+    }
+
+    .menuNav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav ul li {
+        margin: 5px 5px;
+        padding: 10px;
+        box-shadow: 1px 1px black;
+        border-radius: 10px;
+    }
+
+    /*PAGINA INDEX*/
+    .textoMain p {
+        font-size: 28px;
+        
+    }
+
+    .contenidoMain div h3 {
+        font-size: 30px;
+    }
+
+   
+    .contenedorInfo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 15px;
+        margin-top: 50px;
+        text-align: center;
+        
+    }
+
+    .introduccionImg2{
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    .introduccionTexto{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .imgInfo{
+        width: 80%;
+    }
+
+
+
+    .introduccionTexto{
+        font-size: 25px;
+    }
+    /* PAGINA PILATES */
+
+    .imgPilates{
+        width: 70%;
+        height: 800px;
+        margin: 0 auto;
+    }
+
+    .textoPilates{
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 40px;
+    }
+
+    .pregunta{
+        border: 2px dotted blue;
+        margin: 15px;
+    }
+
+    .pregunta h4{
+        margin:0px;
+   
+        padding: 10px;
+     }
+
+     .videoPilates iframe{
+        width: 70%;
+        height: 600px;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+
+    /*ESTILOS FOOTER*/
+
+    footer h2 {
+        font-size: 1.2rem;
+     }
+
+     /*CLASES */
+
+    /* estilo section*/
+    
+    .contenedorMain .mainClases h2{
+        font-size: 2.8rem;
+    }
+   
+    .sectionClases p {
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+}
+
+
+
+
