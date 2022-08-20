@@ -69,12 +69,13 @@ nav ul li a {
 .contenedorMain {
     width: 90%;
     margin: 0 auto;
-
+    
 }
 
 .contenidoMain {
     display: flex;
     flex-direction: column;
+    
 }
 
 .contenidoMain p {
@@ -95,13 +96,7 @@ nav ul li a {
     
 }
 
-.contenidoMain h2 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 30px;
-    text-align: left;
 
-}
 
 .imagenDos {
     display: flex;
@@ -205,35 +200,31 @@ section .imgPilates {
 }
 
 /* estilos de elongacion */
-.tituloElongacion {
-    font-size: 50px;
-    border: solid 1px black;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
 .imgElongacion {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 
-.textoElongacion {
+.texto-elongacion {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Arimo', sans-serif;
     color: rgb(48, 6, 48);
 }
 
 /*PAGINA YOGA */
 
-.mainYoga {
+.main-general {
     width: 80%;
     margin: 0 auto;
 }
 
-.tituloYoga {
-    font-size: 50px;
+.titulo-general {
+    font-size: 30px;
     border: solid 1px black;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -249,22 +240,22 @@ section .imgPilates {
     margin-top: 25px;
 }
 
-/* horarios de yoga*/
-.horarios {
+.tarjetas{
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 3rem 0.5rem;
     justify-content: center;
-    gap: 4rem;
-    text-align: center;
-    margin-top: 7rem;
-    margin-bottom: 3rem;
 }
 
-.horarios .horarioYoga {
-    width: 25rem;
-    font-family: 'Arimo', sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+.tamanio h3{
+    font-size: 20px;
+
 }
+
+
 
 /* PAGINA CLASES  */
 img {
@@ -424,9 +415,6 @@ footer h2 {
 
     /* estilo section*/
 
-    .contenedorMain .mainClases h2 {
-        font-size: 2.1rem;
-    }
 
     .sectionClases p {
         font-size: 1.7rem;
@@ -438,7 +426,7 @@ footer h2 {
         margin-left: 120px;
     }
 
-
+ 
 }
 
 
@@ -593,7 +581,18 @@ ul li:hover{
 
     }
 
-    /*PAGINA ELONGACION*/
+       /* PAGINA ELONGACION */
+       .imgElongacion {
+        width: 80%;
+       }
+
+        .texto-elongacion{
+            font-size: 25px;
+        }
+
+   
+        
+    }
 
 
 
