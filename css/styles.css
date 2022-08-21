@@ -61,9 +61,7 @@ nav ul li a {
 
 }
 
-
-
-/* ESTILOS DEl MAIN*/
+/* ESTILOS DEL MAIN*/
 
 
 .contenedorMain {
@@ -71,6 +69,15 @@ nav ul li a {
     margin: 0 auto;
     
 }
+
+.titulo-general {
+    font-size: 30px;
+    border: solid 1px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* INDEX */
 
 .contenidoMain {
     display: flex;
@@ -105,18 +112,10 @@ nav ul li a {
 
 }
 
-
-
-
 /* PAGINA PILATES */
-.mainPilates {
-    font-size: 1.3rem;
-    border: solid 1px black;
-    margin: 3rem 0 2rem 0;
-}
 
 .contenedorPilates {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -126,8 +125,10 @@ nav ul li a {
 /* imagen */
 
 .imgPilates {
-    margin-bottom: 30px;
-    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* preguntas y respuestas */
@@ -168,7 +169,6 @@ nav ul li a {
 }
 
 .videoUno {
-    /*margin: 100px 450px 50px 450px;*/
     display: flex;
     justify-content: center;
     margin-top: 3rem;
@@ -199,15 +199,14 @@ section .imgPilates {
     text-align: center;
 }
 
-/* estilos de elongacion */
+/* PAGINA ELONGACION */
 
 .imgElongacion {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
-
 
 .texto-elongacion {
     text-align: center;
@@ -216,19 +215,8 @@ section .imgPilates {
     color: rgb(48, 6, 48);
 }
 
+
 /*PAGINA YOGA */
-
-.main-general {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.titulo-general {
-    font-size: 30px;
-    border: solid 1px black;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
 .pYoga {
     font-size: 20px;
@@ -239,23 +227,6 @@ section .imgPilates {
     height: 350px;
     margin-top: 25px;
 }
-
-.tarjetas{
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    margin: 3rem 0.5rem;
-    justify-content: center;
-}
-
-
-
-.tamanio h3{
-    font-size: 20px;
-
-}
-
-
 
 /* PAGINA CLASES  */
 img {
@@ -297,17 +268,27 @@ img {
     color: rgb(48, 6, 48);
 }
 
-
-/* ESTILOS DE CONTACTO */
-
-/* estilos de subtitulo*/
-
-.subtituloContacto {
-    font-size: 50px;
-    border: solid 1px black;
-    margin-top: 50px;
-    margin-bottom: 50px;
+/* tarjetas */
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 3rem 0.5rem;
+    justify-content: center;
+    
 }
+
+.tamanio h3{
+    font-size: 20px;
+}
+
+.bg-tarjeta{
+    background-color: rgb(237, 219, 222);
+    font-family: 'Source Serif Pro', serif;
+}
+
+
+/* PAGINA CONTACTO */
 
 /* estilos de formulario */
 
@@ -429,8 +410,6 @@ footer h2 {
  
 }
 
-
-
 /*QUERY PARA DESKTOP*/
 
 @media screen and (min-width:992px) {
@@ -438,10 +417,10 @@ footer h2 {
     /* ESTILOS HEADER */
 
     /*ANIMACION*/
-ul li:hover{
-    background-color: rgb(245, 163, 176);
-    transform: scale(0.9);
-    box-shadow: 1px 1px 5px violet;
+    ul li:hover{
+        background-color: rgb(245, 163, 176);
+        transform: scale(0.9);
+        box-shadow: 1px 1px 5px violet;
 }
     .header {
         position: sticky;
@@ -521,7 +500,7 @@ ul li:hover{
     /* PAGINA PILATES */
 
     .imgPilates {
-        width: 70%;
+        width: 90%;
         height: 800px;
         margin: 0 auto;
     }
@@ -541,7 +520,6 @@ ul li:hover{
 
     .pregunta h4 {
         margin: 0px;
-
         padding: 10px;
     }
 
@@ -552,7 +530,7 @@ ul li:hover{
         padding-top: 25px;
     }
 
-    /*CLASES */
+    /*PAGINA CLASES */
 
     /* estilo section*/
 
@@ -578,29 +556,67 @@ ul li:hover{
     .container-fluid{
         display: flex;
         align-content: center;
+    }
 
+    /*animacion tarjetas */
+    
+    .card:hover{
+        transform: scale(1.2);
     }
 
        /* PAGINA ELONGACION */
        .imgElongacion {
-        width: 80%;
+        width: 100%;
        }
 
         .texto-elongacion{
             font-size: 25px;
         }
 
-   
+        /*grid*/
+        .contenedor-grid{
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr ;
+            grid-template-rows: 0.3fr 0.5fr 1fr 1fr 0.2fr ;
         
+            grid-template-areas: 
+            "header header"
+            "main main"
+            "section section-dos"
+            "section-tres section-tres"
+            "footer footer";
+        }
+        
+        header{
+            grid-area: header;
+        }
+        
+        main{
+            grid-area: main;
+        }
+        
+        section{
+            grid-area: section;
+        }
+        
+        .section-dos{
+            grid-area: section-dos;
+        }
+        
+        .section-tres{
+            grid-area: section-tres;
+        }
+        
+        footer{
+            grid-area: footer;
+        }
+         
     }
-
-
 
       /*ESTILOS FOOTER*/
 
       footer h2 {
         font-size: 1.2rem;
     }
-
 
 }
